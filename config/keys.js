@@ -9,4 +9,3 @@ if (process.env.NODE_ENV === 'production') {  //if we are running in production,
 }
 
 
-//mongodb+srv://dbUser:nour2992@cluster0-pk3up.azure.mongodb.net/test?retryWrites=true&w=majority

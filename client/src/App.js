@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>Hi there</p>
-        <a href="http://localhost:5000/auth/google">Sign In with Google</a>
+        <a href="/auth/google">Sign In with Google</a>
       </header>
     </div>
   );
