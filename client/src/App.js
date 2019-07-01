@@ -7,17 +7,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-            Hi there       
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p>Hi there</p>
+        <a href="http://localhost:5000/auth/google">Sign In with Google</a>
       </header>
     </div>
   );
