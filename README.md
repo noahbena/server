@@ -1,4 +1,4 @@
-# App to be used by Startup owner to receive feedback
+# App to be used by Startup owner / Product Managers to receive feedback by Email
 
 User uses startup's user 
 ==> startup owner wants feedback 
@@ -21,3 +21,9 @@ Flow walkthrough:
 
               ---------------
 
+Possible ideas to add:
+*Survey Templates proposed with emails
+*A/B test email templates
+*Dashboard of feedback
+*Connect Dashboard to Excel / Tableau ?
+*Email sent again after 15 days if no answer ?
