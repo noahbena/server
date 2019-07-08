@@ -27,3 +27,11 @@ Possible ideas to add:
 *Dashboard of feedback
 *Connect Dashboard to Excel / Tableau ?
 *Email sent again after 15 days if no answer ?
+
+
+
+What does the project do?
+Who is the project for?
+Why is it different?
+How do I use it? (installation instructions)
+How does it work?
