@@ -1,7 +1,8 @@
 //SurveyFormReview shows users their form inputs for review
 import React from "react";
 import { connect } from 'react-redux';
-
+import { withRouter } from 'react-router-dom';
+import * as actions from '../../actions';
 
 const SurveyFormReview = (props) => {
     
@@ -19,14 +20,16 @@ const SurveyFormReview = (props) => {
                 <div>{props.formValues.emails}</div>
             </div>
 
-            <button className="yellow darken-3 btn-flat"
+            <button className="yellow darken-3 btn-flat white-text"
             onClick={props.onCancel}
             >
                 Back
             </button>
-            <button type="submit" className="teal btn-flat right white-text">
-                    Submit
-                    <i className="material-icons right">done</i>
+            <button 
+            onClick={() => props.submitSurvey(props.formValues, props.history)}
+            className="blue btn-flat right white-text">
+                    Send survey
+                    <i className="material-icons right">email</i>
                 </button>
         </div>
     );
@@ -37,4 +40,4 @@ function mapStateToProps(state) {
 
 }
 
-export default connect(mapStateToProps)(SurveyFormReview);
+export default connect(mapStateToProps, actions)(withRouter(SurveyFormReview));
