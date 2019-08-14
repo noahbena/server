@@ -17,7 +17,7 @@ const SurveyFormReview = (props) => {
                 <label>Email Body</label>
                 <div>{props.formValues.body}</div>
                 <label>Recipient List</label>
-                <div>{props.formValues.emails}</div>
+                <div>{props.formValues.recipients}</div>
             </div>
 
             <button className="yellow darken-3 btn-flat white-text"

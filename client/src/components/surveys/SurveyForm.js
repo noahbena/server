@@ -16,7 +16,7 @@ class SurveyForm extends React.Component {
                     <Field label="Survey Title" type="text" name="title" component={SurveyField}/>
                     <Field label="Subject Line" type="text" name="subject" component={SurveyField}/>
                     <Field label="Email Body" type="text" name="body" component={SurveyField}/>
-                    <Field label="Recipient List" type="text" name="emails" component={SurveyField}/>
+                    <Field label="Recipient List" type="text" name="recipients" component={SurveyField}/>
                     </div>
                     <Link to="/surveys" className="red btn-flat white-">
                         Cancel
@@ -44,8 +44,8 @@ function validate(values) {
         errors.body = 'You must provide a body';
     
     //Emails should be separated by commas
-    if (values.emails)
-    errors.emails= validateEmails(values.emails);
+    if (values.recipients)
+    errors.recipients= validateEmails(values.recipients);
 
     return errors;
 }
