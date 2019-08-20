@@ -12,6 +12,7 @@ import * as actions from '../actions'
 import Header from './Header'
 import Landing from "./Landing"
 import Dashboard from './Dashboard'
+import Thanks from './Thanks'
 import SurveyNew from './surveys/SurveyNew'
 
 class App extends React.Component {
@@ -26,6 +27,7 @@ class App extends React.Component {
                     <Route exact path="/surveys" component={Dashboard} />
                     <Route path="/surveys/new" component={SurveyNew} />
                     <Route exact path="/" component={Landing} />
+                    <Route path="/thanks/:feedback" component={Thanks}/> 
                 </div>
             </BrowserRouter>
     );
