@@ -10,6 +10,7 @@ import * as actions from '../actions'
 //Route: 
 
 import Header from './Header'
+import Footer from './Footer'
 import Landing from "./Landing"
 import Dashboard from './Dashboard'
 import About from './About'
@@ -30,6 +31,7 @@ class App extends React.Component {
                     <Route path="/about" component={About} />
                     <Route exact path="/" component={Landing} />
                     <Route path="/thanks/:feedback" component={Thanks}/> 
+                    <Footer/>
                 </div>
             </BrowserRouter>
     );

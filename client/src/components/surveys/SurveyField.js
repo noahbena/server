@@ -5,7 +5,7 @@ import React from 'react';
 export default (props) => {
     console.log(props.meta);
     return (
-        <div>
+        <div style={{marginTop: '100px'}}>
             <label>{props.label}</label>
             <input {...props.input} style={{ marginBottom: '5px'}} />
             <div className="red-text" style={{ marginBottom: '20px '}}>

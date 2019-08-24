@@ -23,10 +23,10 @@ class Header extends React.Component {
         <nav>
         <div className="nav-wrapper">
           <Link 
-          to={this.props.auth ? "/surveys" : "/"} 
+          to="/" 
           className="brand-logo"
           >
-            LOGO
+          <i className="large material-icons large">unfold_less</i>          
           </Link>
           <ul id="nav-mobile" className="right hide-on-med-and-down">
               {this.renderContent()}
@@ -35,7 +35,13 @@ class Header extends React.Component {
                 About
                 </Link>
               </li>
-              <li><a href="collapsible.html">Contact</a></li>
+              <li>
+                <Link 
+                  to={this.props.auth ? "/surveys" : "/"} 
+                >
+                Surveys
+                </Link>
+                </li>
           </ul>
         </div>
       </nav>
