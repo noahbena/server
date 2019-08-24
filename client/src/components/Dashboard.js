@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import SurveyList from './surveys/surveyList';
 
 const Dashboard = () => {
     return (
@@ -14,7 +15,7 @@ const Dashboard = () => {
                 <li style={{ listStyleType: "disc" }}>Avoid complete, irritating or loaded questions</li>
                 <li style={{ listStyleType: "disc" }}>Make sure all questions are consistent</li>
             </ul>
-
+            <SurveyList />
             <div className="fixed-action-btn">
             <Link to="/surveys/new" className="btn-floating btn-large red">
                 <i className="material-icons">add</i>
