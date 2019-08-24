@@ -27,10 +27,11 @@ const SurveyFormReview = (props) => {
             </button>
             <button 
             onClick={() => props.submitSurvey(props.formValues, props.history)}
-            className="blue btn-flat right white-text">
-                    Send survey
-                    <i className="material-icons right">email</i>
-                </button>
+            className="blue btn-flat right white-text"
+            >
+               Send survey
+                <i className="material-icons right">email</i>
+            </button>
         </div>
     );
 };

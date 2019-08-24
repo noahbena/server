@@ -30,8 +30,12 @@ class Header extends React.Component {
           </Link>
           <ul id="nav-mobile" className="right hide-on-med-and-down">
               {this.renderContent()}
-              <li><a href="badges.html">Components</a></li>
-              <li><a href="collapsible.html">JavaScript</a></li>
+              <li>
+                <Link to="/about">
+                About
+                </Link>
+              </li>
+              <li><a href="collapsible.html">Contact</a></li>
           </ul>
         </div>
       </nav>
