@@ -1,9 +1,11 @@
 import React from "react"
+import './style.css';
+
 
 class Landing extends React.Component {
     render (){
     return (
-        <div style={{marginTop: '30px'}}>
+        <div className = "container">
         <h4>OnTrack</h4>
         <p>The goal of OnTrack is to facilitate the product managers & startup owners work on receiving feedback from users. This is to be done following two different functionalities.</p>
         <p>First, it is possible to send email surveys and receive back the answers without having to do it manually. The answers of the surveys will be recorded automatically.

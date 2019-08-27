@@ -10,10 +10,10 @@ import * as actions from '../actions'
 //Route: 
 
 import Header from './Header'
-import Footer from './Footer'
-import Landing from "./Landing"
+import Footer from './footer/Footer'
+import Landing from "./pages/Landing"
 import Dashboard from './Dashboard'
-import About from './About'
+import About from './pages/About'
 import Thanks from './Thanks'
 import SurveyNew from './surveys/SurveyNew'
 
@@ -24,7 +24,7 @@ class App extends React.Component {
     render(){
     return (
             <BrowserRouter>
-                <div className="container">
+                <div className="container" style={{}}>
                     <Header/>
                     <Route exact path="/surveys" component={Dashboard} />
                     <Route path="/surveys/new" component={SurveyNew} />

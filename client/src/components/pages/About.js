@@ -1,8 +1,9 @@
 import React from "react";
+import './style.css';
 
 const About = () => {
     return (
-        <div style={{marginTop: '30px'}}>
+        <div className = "container">
                 <h4>About</h4>
                 <p>OnTrack is an app created for Product Managers and Startup owners to receive feedback in an easy and traceable way.</p>
                 <p>Customer feedback is a term that describes the process of obtaining a customer’s opinion. 
